@@ -1,5 +1,12 @@
+// processNxCoreStatusMessage.hpp
 #pragma once
 
-#include "NxCoreAPI_Wrapper_C++.h" // contains NxCoreClass, NxCoreSystem, etc.
+#include "NxCoreAPI_Wrapper_C++.h" // NxCoreSystem, NxCoreClass, NxMSG_*, NxCORESTATUS_*, NxCLOCK_*, etc.
 
-int processNxCoreStatusMessage(const NxCoreSystem *pNxCoreSys);
+#include <iosfwd> // forward declare std::ostream
+
+// Processes NxMSG_STATUS callbacks.
+// Returns NxCALLBACKRETURN_CONTINUE (normal) or NxCALLBACKRETURN_STOP (on fatal error).
+[[nodiscard]] int processNxCoreStatusMessage(
+    const NxCoreSystem *pNxCoreSys,
+    std::ostream &out = std::cout) noexcept;

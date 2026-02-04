@@ -147,8 +147,14 @@ Or during development (from build directory):
 ### Usage without arguments (help output)
 ```bash
 nxcore-tape-reader
-Program derived from NxCore API Sample1
-Usage: nxcore-tape-reader <path-to-libnx.so> <path-to-tapefile>
+NxCore Tape Reader (modernized C++17 version)
+
+Usage:
+  nxcore-tape-reader <path-to-libnx.so> [path-to-tape-file]
+
+Examples:
+  nxcore-tape-reader ./libnx.so /data/tapes/20250102.nxc
+  nxcore-tape-reader ./libnx.so      # process live feed
 ```
 
 ### Sample program output from reading a tapefile
