@@ -3,7 +3,8 @@
 
 #include "processNxCoreStatusMessage.hpp"
 
-// extern NxCoreClass NxCore;           // still needed if you use NxCore. functions inside handlers
+// extern NxCoreClass NxCore;
+// still needed if you use NxCore functions inside handlers
 // Consider: passing a context object instead of relying on global in the future
 
 [[nodiscard]] int OnNxCoreCallback(

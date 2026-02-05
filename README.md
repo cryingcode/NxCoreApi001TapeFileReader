@@ -160,9 +160,11 @@ Examples:
 ### Sample program output from reading a tapefile
 ```bash
 nxcore-tape-reader libnx.so ~/20211013.WE.nx2
+Running from: NxCoreApiTapeFileReader (/home/crymoney/Crymoney/CrymoneyCodeLinux/NxCoreApi001TapeFileReader/NxCoreApiTapeFileReader)
 Reading from tapefile: /home/crymoney/Crymoney/CrymoneyTest/NanexNxCoreDataSets/20211013.WE.nx2
-NxCore C++ nxcore-tape-reader Start.
-Processing the tape: /home/crymoney/Crymoney/CrymoneyTest/NanexNxCoreDataSets/20211013.WE.nx2
+nxcore-tape-reader starting...
+NxCore library loaded successfully.
+Processing tape: /home/crymoney/Crymoney/CrymoneyTest/NanexNxCoreDataSets/20211013.WE.nx2
 NxCore Initialize Message.
 libnx.so version is v3.2.18
 NxCore Unknown (default) Status Message: TapeOpen,0,0 (0)
@@ -172,7 +174,7 @@ NxCore Time: 10/13/2021 00:01:00
 NxCore Time: 10/13/2021 00:02:00
 NxCore Time: 10/13/2021 00:03:00
   .
-  .  (many hours)
+  .  ( and so on ... )
   .
 NxCore Time: 10/13/2021 23:58:00
 NxCore Time: 10/13/2021 23:59:00
@@ -180,7 +182,8 @@ NxCore Time: 10/13/2021 24:00:00
 NxCore tape file sentinel read -> hour of the day == 24.
 NxCore Complete Message.
 Tape completed normally.
-NxCore C++ nxcore-tape-reader Stop.
+nxcore-tape-reader finished.
+Execution finished successfully.
 ```
 
 ## Troubleshooting
