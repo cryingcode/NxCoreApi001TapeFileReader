@@ -130,7 +130,7 @@ Then run locally:
 
 #### Installed Files (default prefix /usr/local):
 - Binary: `/usr/local/bin/nxcore-tape-reader`
-- Library: `/usr/local/lib/libtapefilereaderproject.a`
+- Static Library: `/usr/local/lib/libtapefilereaderproject.a`
 - Library: `/usr/local/lib/extern/nxcore/libnx.so`
 - CMake config: `/usr/local/lib/cmake/TapeFileReaderProject/*.cmake`
 
